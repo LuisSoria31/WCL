@@ -19,7 +19,7 @@
     },
     "WCL_frontend": {
       "dependencies": [
-        "WCL_backend"
+        
       ],
       "source": [
         "src/WCL_frontend/dist"
