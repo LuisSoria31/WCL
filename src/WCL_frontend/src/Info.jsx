@@ -1,36 +1,34 @@
-///import Table from 'react-bootstrap/Table';
+import Table from 'react-bootstrap/Table';
 
 function Info() {
   return (
-    <table>
+    <center><table>
       <thead>
         <tr>
-          <th>#</th>
+          <th>Chequeo</th>
           <th>PH</th>
           <th>Alcalinidad</th>
-          <th>Username</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>1</td>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
+          <td>Primer Chequeo</td>
           <td>2</td>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
+          <td>5</td>
         </tr>
         <tr>
-          <td>3</td>
-          <td colSpan={2}>Larry the Bird</td>
-          <td>@twitter</td>
+          <td>Segundo chequeo</td>
+          <td>1</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>Tercer chequeo</td>
+          <td>4</td>
+          <td>1</td>
         </tr>
       </tbody>
     </table>
+    </center>
   );
 }
 
