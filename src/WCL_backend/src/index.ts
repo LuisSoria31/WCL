@@ -5,22 +5,31 @@ export default Server(() => {
     const app = express();
     app.use(express.json());
 
-    app.get('/datos', (req, res) => {
-        const datos = [
+
+    app.get('/users', (req, res) => {
+        const users = [
             {
-                dato:"PH: " ,
-                numero: 25
+                name: "Juanito",
+                edad: 25
             },
             {
-                dato:"Alcalinidad: ",
-                numero: 22
+                name: "Angelito",
+                edad: 22
             },
             {
-                dato:"Puresa: ",
-                numero: 24
+                name: "Josesito",
+                edad: 24
+            },
+            {
+                name: "Manuelito",
+                edad: 27
+            },
+            {
+                name: "Abelardito",
+                edad: 30
             },
         ];
-        return res.status(200).json(datos)
+        return res.status(200).json(users)
     })
 
     return app.listen();
